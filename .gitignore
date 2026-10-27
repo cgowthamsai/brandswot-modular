@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+sources/instances/
+fontbakery-report.html
+.DS_Store
+Thumbs.db
+dist/
+node_modules/
+sources/build.ninja
+sources/instance_ufos/
+.ninja_log
+.fbv/
+sources/instance_ufos/
+sources/*.designspace.bak
+.ninja_log

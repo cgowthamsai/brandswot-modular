@@ -1,0 +1,52 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tools
+        run: pip install -r requirements.txt
+
+      - name: Build fonts
+        run: make build
+
+      - name: FontBakery (Google Fonts profile)
+        run: |
+          python -m venv .fbv
+          .fbv/bin/pip install -q "fontbakery[googlefonts]"
+          PATH="$PWD/.fbv/bin:$PATH" make test
+        continue-on-error: true   # family name "BRANDSWOT" is flagged as an abbreviation by design
+
+      - name: Desktop zip
+        run: make zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BRANDSWOT-Modular
+          path: |
+            fonts/
+            dist/*.zip
+            fontbakery-report.html
+
+      - name: GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          body_path: documentation/RELEASE_NOTES.md

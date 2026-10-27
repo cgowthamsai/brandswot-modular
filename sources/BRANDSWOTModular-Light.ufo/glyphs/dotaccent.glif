@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotaccent" format="2">
+  <advance width="220"/>
+  <unicode hex="02D9"/>
+  <outline>
+    <contour>
+      <point x="65" y="612" type="line"/>
+      <point x="99" y="612" type="line"/>
+      <point x="99" y="623" type="line"/>
+      <point x="65" y="623" type="line"/>
+    </contour>
+    <contour>
+      <point x="121" y="612" type="line"/>
+      <point x="155" y="612" type="line"/>
+      <point x="155" y="623" type="line"/>
+      <point x="121" y="623" type="line"/>
+    </contour>
+    <contour>
+      <point x="65" y="645" type="line"/>
+      <point x="74" y="645" type="line"/>
+      <point x="74" y="656" type="line"/>
+      <point x="65" y="656" type="line"/>
+    </contour>
+    <contour>
+      <point x="96" y="645" type="line"/>
+      <point x="124" y="645" type="line"/>
+      <point x="124" y="656" type="line"/>
+      <point x="96" y="656" type="line"/>
+    </contour>
+    <contour>
+      <point x="146" y="645" type="line"/>
+      <point x="155" y="645" type="line"/>
+      <point x="155" y="656" type="line"/>
+      <point x="146" y="656" type="line"/>
+    </contour>
+    <contour>
+      <point x="65" y="678" type="line"/>
+      <point x="99" y="678" type="line"/>
+      <point x="99" y="689" type="line"/>
+      <point x="65" y="689" type="line"/>
+    </contour>
+    <contour>
+      <point x="121" y="678" type="line"/>
+      <point x="155" y="678" type="line"/>
+      <point x="155" y="689" type="line"/>
+      <point x="121" y="689" type="line"/>
+    </contour>
+  </outline>
+</glyph>

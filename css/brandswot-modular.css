@@ -1,0 +1,24 @@
+/*!
+ * BRANDSWOT Modular — web font
+ * Designed by Gowtham Sai · BRANDSWOT Consultancy · https://brandswotconsultancy.com
+ * SIL Open Font License 1.1 · https://github.com/cgowthamsai/brandswot-modular
+ *
+ * Usage:  font-family: "BRANDSWOT Modular", monospace;
+ *         font-weight: 300–900 (Light → Black), font-style: normal | italic
+ */
+@font-face {
+  font-family: "BRANDSWOT Modular";
+  src: url("../fonts/webfonts/BRANDSWOTModular[wght].woff2") format("woff2-variations"),
+       url("../fonts/webfonts/BRANDSWOTModular[wght].woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BRANDSWOT Modular";
+  src: url("../fonts/webfonts/BRANDSWOTModular-Italic[wght].woff2") format("woff2-variations"),
+       url("../fonts/webfonts/BRANDSWOTModular-Italic[wght].woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}

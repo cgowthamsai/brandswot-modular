@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotaccentcomb" format="2">
+  <unicode hex="0307"/>
+  <anchor x="0" y="606" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-45" y="606" type="line"/>
+      <point x="-5" y="606" type="line"/>
+      <point x="-5" y="629" type="line"/>
+      <point x="-45" y="629" type="line"/>
+    </contour>
+    <contour>
+      <point x="5" y="606" type="line"/>
+      <point x="45" y="606" type="line"/>
+      <point x="45" y="629" type="line"/>
+      <point x="5" y="629" type="line"/>
+    </contour>
+    <contour>
+      <point x="-45" y="639" type="line"/>
+      <point x="-30" y="639" type="line"/>
+      <point x="-30" y="662" type="line"/>
+      <point x="-45" y="662" type="line"/>
+    </contour>
+    <contour>
+      <point x="-20" y="639" type="line"/>
+      <point x="20" y="639" type="line"/>
+      <point x="20" y="662" type="line"/>
+      <point x="-20" y="662" type="line"/>
+    </contour>
+    <contour>
+      <point x="30" y="639" type="line"/>
+      <point x="45" y="639" type="line"/>
+      <point x="45" y="662" type="line"/>
+      <point x="30" y="662" type="line"/>
+    </contour>
+    <contour>
+      <point x="-45" y="672" type="line"/>
+      <point x="-5" y="672" type="line"/>
+      <point x="-5" y="695" type="line"/>
+      <point x="-45" y="695" type="line"/>
+    </contour>
+    <contour>
+      <point x="5" y="672" type="line"/>
+      <point x="45" y="672" type="line"/>
+      <point x="45" y="695" type="line"/>
+      <point x="5" y="695" type="line"/>
+    </contour>
+  </outline>
+</glyph>

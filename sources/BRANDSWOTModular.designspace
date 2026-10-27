@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="700"/>
+  </axes>
+  <sources>
+    <source filename="BRANDSWOTModular-Light.ufo" familyname="BRANDSWOT Modular" stylename="Light">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+    </source>
+    <source filename="BRANDSWOTModular-Bold.ufo" familyname="BRANDSWOT Modular" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="BRANDSWOTModular-Black.ufo" familyname="BRANDSWOT Modular" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="BRANDSWOT Modular" stylename="Light" filename="instances/BRANDSWOTModular-Light.ufo" postscriptfontname="BRANDSWOTModular-Light">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+    </instance>
+    <instance familyname="BRANDSWOT Modular" stylename="Regular" filename="instances/BRANDSWOTModular-Regular.ufo" postscriptfontname="BRANDSWOTModular-Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </instance>
+    <instance familyname="BRANDSWOT Modular" stylename="Medium" filename="instances/BRANDSWOTModular-Medium.ufo" postscriptfontname="BRANDSWOTModular-Medium">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance familyname="BRANDSWOT Modular" stylename="SemiBold" filename="instances/BRANDSWOTModular-SemiBold.ufo" postscriptfontname="BRANDSWOTModular-SemiBold">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+      </location>
+    </instance>
+    <instance familyname="BRANDSWOT Modular" stylename="Bold" filename="instances/BRANDSWOTModular-Bold.ufo" postscriptfontname="BRANDSWOTModular-Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </instance>
+    <instance familyname="BRANDSWOT Modular" stylename="ExtraBold" filename="instances/BRANDSWOTModular-ExtraBold.ufo" postscriptfontname="BRANDSWOTModular-ExtraBold">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+      </location>
+    </instance>
+    <instance familyname="BRANDSWOT Modular" stylename="Black" filename="instances/BRANDSWOTModular-Black.ufo" postscriptfontname="BRANDSWOTModular-Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

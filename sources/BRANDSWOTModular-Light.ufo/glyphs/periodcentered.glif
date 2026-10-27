@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="periodcentered" format="2">
+  <advance width="220"/>
+  <unicode hex="00B7"/>
+  <outline>
+    <contour>
+      <point x="65" y="315" type="line"/>
+      <point x="74" y="315" type="line"/>
+      <point x="74" y="326" type="line"/>
+      <point x="65" y="326" type="line"/>
+    </contour>
+    <contour>
+      <point x="96" y="315" type="line"/>
+      <point x="124" y="315" type="line"/>
+      <point x="124" y="326" type="line"/>
+      <point x="96" y="326" type="line"/>
+    </contour>
+    <contour>
+      <point x="146" y="315" type="line"/>
+      <point x="155" y="315" type="line"/>
+      <point x="155" y="326" type="line"/>
+      <point x="146" y="326" type="line"/>
+    </contour>
+    <contour>
+      <point x="65" y="348" type="line"/>
+      <point x="99" y="348" type="line"/>
+      <point x="99" y="359" type="line"/>
+      <point x="65" y="359" type="line"/>
+    </contour>
+    <contour>
+      <point x="121" y="348" type="line"/>
+      <point x="155" y="348" type="line"/>
+      <point x="155" y="359" type="line"/>
+      <point x="121" y="359" type="line"/>
+    </contour>
+    <contour>
+      <point x="65" y="381" type="line"/>
+      <point x="74" y="381" type="line"/>
+      <point x="74" y="392" type="line"/>
+      <point x="65" y="392" type="line"/>
+    </contour>
+    <contour>
+      <point x="96" y="381" type="line"/>
+      <point x="124" y="381" type="line"/>
+      <point x="124" y="392" type="line"/>
+      <point x="96" y="392" type="line"/>
+    </contour>
+    <contour>
+      <point x="146" y="381" type="line"/>
+      <point x="155" y="381" type="line"/>
+      <point x="155" y="392" type="line"/>
+      <point x="146" y="392" type="line"/>
+    </contour>
+  </outline>
+</glyph>

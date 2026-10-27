@@ -1,0 +1,381 @@
+<title>BRANDSWOT Modular</title>
+<meta name="description" content="BRANDSWOT Modular — a free pixel display typeface built from running-bond brickwork. Variable weight 300–900 with italics. By Gowtham Sai, BRANDSWOT Consultancy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a building site — one wide wall of type up top, then courses (sections) laid on a 12-col grid. */
+@font-face {
+  font-family: "BRANDSWOT Modular";
+  src: url("fonts/BRANDSWOTModular-VF.woff2") format("woff2");
+  font-weight: 300 900; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "BRANDSWOT Modular";
+  src: url("fonts/BRANDSWOTModular-Italic-VF.woff2") format("woff2");
+  font-weight: 300 900; font-style: italic; font-display: swap;
+}
+:root {
+  /* Brand-committed single look: BRANDSWOT ink ground + logo orange */
+  --ink: #0B0B0C;
+  --wall: #151517;
+  --line: #2A2926;
+  --paper: #EDEAE3;
+  --muted: #9A958B;
+  --orange: #FF6A1F;
+  --display: "BRANDSWOT Modular", "JetBrains Mono", ui-monospace, monospace;
+  --body: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  --gutter: clamp(16px, 4vw, 56px);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--ink); }
+body { background: var(--ink); color: var(--paper); font-family: var(--body); font-size: 17px; line-height: 1.55; margin: 0; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: var(--gutter); }
+a { color: var(--orange); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+.label { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+/* top bar */
+.bar { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding-block: 22px; border-bottom: 1px solid var(--line); }
+.bar .mark { font-family: var(--display); font-weight: 900; font-size: 20px; letter-spacing: .02em; }
+.bar .mark b { color: var(--orange); font-weight: 900; }
+.bar nav { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 15px; }
+.bar nav a { color: var(--paper); text-decoration: none; }
+.bar nav a:hover { color: var(--orange); }
+
+/* hero */
+.hero { padding-block: clamp(40px, 7vw, 96px) clamp(28px, 4vw, 56px); }
+.hero h1 { font-family: var(--display); font-weight: 900; font-size: clamp(54px, 13.5vw, 196px); line-height: .92; margin: 0; letter-spacing: 0; text-wrap: balance; }
+.hero h1 span { color: var(--orange); display: block; }
+.hero .lede { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 48px; margin-top: clamp(28px, 4vw, 48px); align-items: end; }
+.hero .lede p { margin: 0; max-width: 58ch; font-size: clamp(18px, 1.6vw, 21px); }
+.facts { display: flex; flex-wrap: wrap; gap: 10px; }
+.facts span { font-family: var(--mono); font-size: 13px; border: 1px solid var(--line); padding: 6px 10px; border-radius: 2px; color: var(--paper); }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--body); font-weight: 700; font-size: 16px; padding: 14px 20px; border-radius: 2px; text-decoration: none; border: 1px solid var(--orange); cursor: pointer; }
+.btn.solid { background: var(--orange); color: var(--ink); }
+.btn.ghost { background: transparent; color: var(--paper); border-color: var(--line); }
+.btn.ghost:hover { border-color: var(--paper); }
+
+section { border-top: 1px solid var(--line); padding-block: clamp(48px, 6vw, 88px); }
+.head { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 48px; margin-bottom: 36px; align-items: end; }
+.head h2 { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 4vw, 48px); line-height: 1; margin: 0; text-wrap: balance; }
+.head p { margin: 0; color: var(--muted); max-width: 56ch; }
+
+/* tester */
+.tester { background: var(--wall); border: 1px solid var(--line); border-radius: 2px; }
+.controls { display: flex; flex-wrap: wrap; gap: 18px 32px; padding: 18px 20px; border-bottom: 1px solid var(--line); align-items: center; }
+.ctl { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.ctl output { font-family: var(--mono); font-size: 13px; min-width: 7ch; color: var(--paper); font-variant-numeric: tabular-nums; }
+input[type=range] { accent-color: var(--orange); width: 160px; max-width: 40vw; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; }
+.seg button { font: 500 14px var(--body); background: transparent; color: var(--paper); border: 0; padding: 8px 14px; cursor: pointer; }
+.seg button[aria-pressed=true] { background: var(--paper); color: var(--ink); }
+#sample { display: block; width: 100%; min-height: 220px; background: transparent; color: var(--paper); border: 0; resize: vertical; padding: 24px 20px 32px; font-family: var(--display); font-size: 96px; font-weight: 700; line-height: 1.12; overflow-wrap: anywhere; }
+
+/* weights */
+.weights { display: grid; gap: 0; }
+.wrow { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; align-items: baseline; padding-block: 14px; border-bottom: 1px solid var(--line); }
+.wrow .label { color: var(--muted); }
+.wrow .w { font-family: var(--display); font-size: clamp(30px, 5.4vw, 72px); line-height: 1.05; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+
+/* brick explainer */
+.brick { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; align-items: center; }
+.brick canvas { width: 100%; max-width: 520px; height: auto; aspect-ratio: 5 / 4; display: block; }
+.specs { display: grid; grid-template-columns: max-content 1fr; gap: 10px 24px; margin: 0; font-variant-numeric: tabular-nums; }
+.specs dt { font-family: var(--mono); font-size: 13px; color: var(--orange); }
+.specs dd { margin: 0; }
+
+/* glyphs */
+.glyphs { display: grid; grid-template-columns: repeat(auto-fill, minmax(58px, 1fr)); border-left: 1px solid var(--line); border-top: 1px solid var(--line); }
+.glyphs button { aspect-ratio: 1; background: transparent; border: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--paper); font-family: var(--display); font-weight: 700; font-size: 28px; cursor: pointer; }
+.glyphs button:hover, .glyphs button.on { background: var(--orange); color: var(--ink); }
+.glyph-meta { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 18px; font-family: var(--mono); font-size: 13px; color: var(--muted); min-height: 1.6em; }
+
+/* languages */
+.langs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px 40px; }
+.langs div { min-width: 0; }
+.langs p { margin: 6px 0 0; font-family: var(--display); font-weight: 600; font-size: 26px; line-height: 1.25; }
+
+/* install */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.card { border: 1px solid var(--line); border-radius: 2px; padding: 22px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.card h3 { margin: 0; font-size: 19px; }
+.card .btn { align-self: flex-start; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+pre { margin: 0; background: var(--wall); border: 1px solid var(--line); border-radius: 2px; padding: 14px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.6; color: var(--paper); }
+.copy { align-self: flex-start; font: 600 13px var(--mono); background: transparent; color: var(--orange); border: 1px solid var(--line); padding: 7px 12px; border-radius: 2px; cursor: pointer; }
+.copy:hover { border-color: var(--orange); }
+
+/* licence + footer */
+.licence { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px 48px; }
+.licence ul { margin: 10px 0 0; padding-left: 1.1em; }
+.licence li { margin-bottom: 6px; }
+footer { border-top: 1px solid var(--line); padding-block: 40px 56px; display: flex; flex-wrap: wrap; gap: 20px 48px; justify-content: space-between; color: var(--muted); font-size: 15px; }
+footer .big { font-family: var(--display); font-weight: 900; font-size: 28px; color: var(--paper); }
+footer .big b { color: var(--orange); }
+
+@media (max-width: 560px) {
+  .wrow { grid-template-columns: 1fr; gap: 2px; }
+  #sample { font-size: 56px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="bar">
+    <div class="mark">BRAND<b>SWOT</b> MODULAR</div>
+    <nav aria-label="Sections">
+      <a href="#try">Type tester</a>
+      <a href="#weights">Weights</a>
+      <a href="#glyphs">Glyphs</a>
+      <a href="#install">Install</a>
+      <a href="#licence">Licence</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>BRANDSWOT <span>Modular</span></h1>
+    <div class="lede">
+      <p>A pixel display typeface built from brickwork. Every pixel of the 5&nbsp;×&nbsp;7 grid holds three courses of running-bond masonry, so the letters read as built, not drawn. Free for everyone, including commercial work.</p>
+      <div class="facts" aria-label="Family facts">
+        <span>Light 300 → Black 900</span><span>Roman + Italic</span><span>Variable</span><span>309 characters</span><span>SIL OFL 1.1</span>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn solid" href="https://github.com/cgowthamsai/brandswot-modular/releases/latest" target="_blank" rel="noopener">Download fonts (OTF · TTF · Web)</a>
+      <a class="btn ghost" href="#install">Use on the web</a>
+    </div>
+  </div>
+</div>
+
+<section id="try">
+  <div class="wrap">
+    <div class="head"><h2>Type tester</h2><p>Click into the wall and type. Weight changes the mortar, never the letter.</p></div>
+    <div class="tester">
+      <div class="controls">
+        <label class="ctl"><span class="label">Weight</span><input id="wght" type="range" min="300" max="900" step="1" value="700"><output id="wghtOut">700</output></label>
+        <label class="ctl"><span class="label">Size</span><input id="size" type="range" min="24" max="220" step="1" value="96"><output id="sizeOut">96 px</output></label>
+        <div class="ctl"><span class="label">Style</span>
+          <div class="seg" role="group" aria-label="Style">
+            <button type="button" id="roman" aria-pressed="true">Roman</button>
+            <button type="button" id="italic" aria-pressed="false">Italic</button>
+          </div>
+        </div>
+        <div class="ctl"><span class="label">Colour</span>
+          <div class="seg" role="group" aria-label="Colour">
+            <button type="button" id="cPaper" aria-pressed="true">Paper</button>
+            <button type="button" id="cOrange" aria-pressed="false">Orange</button>
+          </div>
+        </div>
+      </div>
+      <textarea id="sample" spellcheck="false" aria-label="Sample text">We don't just brand. We build.</textarea>
+    </div>
+  </div>
+</section>
+
+<section id="weights">
+  <div class="wrap">
+    <div class="head"><h2>Seven weights, one wall</h2><p>Every weight shares identical spacing, so headlines can animate from Light to Black without reflowing.</p></div>
+    <div class="weights" id="weightList"></div>
+  </div>
+</section>
+
+<section id="brick">
+  <div class="wrap">
+    <div class="brick">
+      <canvas id="brickCanvas" width="1000" height="800" aria-label="Diagram of one letter A laid in running-bond bricks"></canvas>
+      <div>
+        <div class="head" style="margin-bottom:24px"><h2>How a pixel is laid</h2></div>
+        <dl class="specs">
+          <dt>Grid</dt><dd>5 × 7 pixels for capitals, 5 rows for x-height, 2 rows of descender</dd>
+          <dt>Pixel</dt><dd>100 × 99 units: three brick courses</dd>
+          <dt>Brick</dt><dd>40 × 23 units at Bold, laid in running bond</dd>
+          <dt>Mortar</dt><dd>10 units at Bold · 22 at Light · 2 at Black</dd>
+          <dt>Em</dt><dd>1000 units · cap height 695 · x-height 497</dd>
+          <dt>Italic</dt><dd>Same bricks sheared 12°</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="glyphs">
+  <div class="wrap">
+    <div class="head"><h2>Glyphs</h2><p>Google Fonts Latin Core: every Western, Central and Eastern European Latin alphabet, plus ₹ and arrows. Select a glyph to see its code point.</p></div>
+    <div class="glyphs" id="glyphGrid"></div>
+    <div class="glyph-meta" id="glyphMeta" aria-live="polite"><span>Select a glyph</span></div>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="wrap">
+    <div class="head"><h2>Languages</h2><p>A few of the alphabets the family sets without a missing accent.</p></div>
+    <div class="langs">
+      <div><span class="label">Français</span><p>Bâtir une marque, brique par brique.</p></div>
+      <div><span class="label">Deutsch</span><p>Größe entsteht Stein für Stein.</p></div>
+      <div><span class="label">Polski</span><p>Zbuduj markę, która przetrwa.</p></div>
+      <div><span class="label">Čeština</span><p>Značka stavěná cihla po cihle.</p></div>
+      <div><span class="label">Türkçe</span><p>Markanı tuğla tuğla inşa et.</p></div>
+      <div><span class="label">Español</span><p>Construimos marcas, ladrillo a ladrillo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="head"><h2>Install</h2><p>Desktop files for design apps, a CDN link for websites, and an npm package for React, Vite and Next.js projects.</p></div>
+    <div class="cards">
+      <div class="card">
+        <h3>Desktop</h3>
+        <p>Download the zip, open <code>otf/</code>, select all files and install. Works in Figma, Word, Photoshop, Illustrator, InDesign, Premiere and Canva (upload).</p>
+        <a class="btn solid" href="https://github.com/cgowthamsai/brandswot-modular/releases/latest" target="_blank" rel="noopener">Latest release</a>
+      </div>
+      <div class="card">
+        <h3>Website, one line</h3>
+        <pre id="code1">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/brandswot-modular@2/css/brandswot-modular.css"&gt;</pre>
+        <button class="copy" type="button" data-copy="code1">Copy</button>
+        <pre id="code2">h1 { font-family: "BRANDSWOT Modular", monospace; font-weight: 900; }</pre>
+        <button class="copy" type="button" data-copy="code2">Copy</button>
+      </div>
+      <div class="card">
+        <h3>npm</h3>
+        <pre id="code3">npm install brandswot-modular</pre>
+        <button class="copy" type="button" data-copy="code3">Copy</button>
+        <pre id="code4">import "brandswot-modular";</pre>
+        <button class="copy" type="button" data-copy="code4">Copy</button>
+        <p>Tailwind: add <code>modular: ['"BRANDSWOT Modular"', 'monospace']</code> to <code>fontFamily</code>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="licence">
+  <div class="wrap licence">
+    <div>
+      <div class="head" style="margin-bottom:12px"><h2>Licence</h2></div>
+      <p>BRANDSWOT Modular is released under the SIL Open Font License 1.1.</p>
+    </div>
+    <div>
+      <span class="label">You can</span>
+      <ul><li>Use it for personal and commercial work, free, forever</li><li>Use it in logos, packaging, apps, video and print</li><li>Embed it in websites, apps and PDFs</li><li>Modify it and share your version under the OFL</li></ul>
+    </div>
+    <div>
+      <span class="label">You can't</span>
+      <ul><li>Sell the font files on their own</li><li>Release a modified version under another licence</li></ul>
+      <p style="color:var(--muted);font-size:15px">“BRANDSWOT” is a trademark of BRANDSWOT Consultancy.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <div><div class="big">BRAND<b>SWOT</b></div>Designed by Gowtham Sai · BRANDSWOT Consultancy · Hyderabad, India</div>
+    <div>Custom typefaces and brand work<br><a href="https://brandswotconsultancy.com" target="_blank" rel="noopener">brandswotconsultancy.com</a> · gowtham@brandswotconsultancy.com</div>
+    <div>Source and issues<br><a href="https://github.com/cgowthamsai/brandswot-modular" target="_blank" rel="noopener">github.com/cgowthamsai/brandswot-modular</a></div>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var CHARS = "__CHARS__";
+  var $ = function (id) { return document.getElementById(id); };
+
+  // tester
+  var sample = $("sample"), wght = $("wght"), size = $("size");
+  function apply() {
+    sample.style.fontWeight = wght.value;
+    sample.style.fontVariationSettings = '"wght" ' + wght.value;
+    sample.style.fontSize = size.value + "px";
+    $("wghtOut").textContent = wght.value;
+    $("sizeOut").textContent = size.value + " px";
+  }
+  wght.addEventListener("input", apply);
+  size.addEventListener("input", apply);
+  function seg(a, b, fn) {
+    [a, b].forEach(function (el) {
+      el.addEventListener("click", function () {
+        a.setAttribute("aria-pressed", String(el === a));
+        b.setAttribute("aria-pressed", String(el === b));
+        fn(el === a);
+      });
+    });
+  }
+  seg($("roman"), $("italic"), function (roman) { sample.style.fontStyle = roman ? "normal" : "italic"; });
+  seg($("cPaper"), $("cOrange"), function (paper) { sample.style.color = paper ? "var(--paper)" : "var(--orange)"; });
+  if (window.innerWidth < 560) { size.value = 56; }
+  apply();
+
+  // weights
+  var W = [[300, "Light"], [400, "Regular"], [500, "Medium"], [600, "SemiBold"], [700, "Bold"], [800, "ExtraBold"], [900, "Black"]];
+  var list = $("weightList");
+  W.forEach(function (w) {
+    var row = document.createElement("div");
+    row.className = "wrow";
+    row.innerHTML = '<span class="label">' + w[1] + " " + w[0] + '</span><span class="w" style="font-weight:' + w[0] + '">Hyderabad 500081</span>';
+    list.appendChild(row);
+  });
+
+  // glyph grid
+  var grid = $("glyphGrid"), meta = $("glyphMeta"), current = null;
+  Array.from(CHARS).forEach(function (ch) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.textContent = ch;
+    var cp = ch.codePointAt(0).toString(16).toUpperCase().padStart(4, "0");
+    b.setAttribute("aria-label", "U+" + cp);
+    b.addEventListener("click", function () {
+      if (current) current.classList.remove("on");
+      b.classList.add("on"); current = b;
+      meta.innerHTML = "<span>U+" + cp + "</span><span>HTML &amp;#x" + cp + ";</span><span>CSS \\" + cp + "</span>";
+    });
+    grid.appendChild(b);
+  });
+
+  // brick diagram: the letter A, laid exactly as the font does it
+  var A = [".###.", "#...#", "#...#", "#####", "#...#", "#...#", "#...#"];
+  var cv = $("brickCanvas"), ctx = cv.getContext("2d");
+  var css = getComputedStyle(document.documentElement);
+  var ORANGE = css.getPropertyValue("--orange").trim() || "#FF6A1F";
+  var LINE = css.getPropertyValue("--line").trim() || "#2A2926";
+  var s = 1.05, ox = 240, oy = 760;
+  ctx.strokeStyle = LINE; ctx.lineWidth = 1;
+  for (var gx = 0; gx <= 5; gx++) { ctx.beginPath(); ctx.moveTo(ox + gx * 100 * s, oy); ctx.lineTo(ox + gx * 100 * s, oy - 7 * 99 * s); ctx.stroke(); }
+  for (var gy = 0; gy <= 7; gy++) { ctx.beginPath(); ctx.moveTo(ox, oy - gy * 99 * s); ctx.lineTo(ox + 500 * s, oy - gy * 99 * s); ctx.stroke(); }
+  ctx.fillStyle = ORANGE;
+  for (var p = 0; p < 7; p++) {
+    var cols = A[6 - p];
+    for (var k = 0; k < 3; k++) {
+      var r = p * 3 + k, y0 = 12 + 33 * r, phase = r % 2 === 0 ? 0 : -25;
+      var c = 0;
+      while (c < 5) {
+        if (cols[c] !== "#") { c++; continue; }
+        var a = c; while (c + 1 < 5 && cols[c + 1] === "#") c++;
+        var R0 = a * 100, R1 = c * 100 + 90;
+        for (var bx = phase - 50; bx < R1; bx += 50) {
+          var x0 = Math.max(bx, R0), x1 = Math.min(bx + 40, R1);
+          if (x1 > x0) ctx.fillRect(ox + x0 * s, oy - (y0 + 23) * s, (x1 - x0) * s, 23 * s);
+        }
+        c++;
+      }
+    }
+  }
+
+  // copy buttons
+  document.querySelectorAll(".copy").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var el = $(btn.getAttribute("data-copy"));
+      var text = el.textContent;
+      function done() { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy"; }, 1600); }
+      function fallback() {
+        var range = document.createRange(); range.selectNodeContents(el);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+        btn.textContent = "Selected — press Ctrl+C";
+      }
+      try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+    });
+  });
+})();
+</script>

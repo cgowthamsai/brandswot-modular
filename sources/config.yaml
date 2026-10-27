@@ -1,0 +1,11 @@
+# gftools builder config — run from repo root:  gftools builder sources/config.yaml
+sources:
+  - BRANDSWOTModular.designspace
+  - BRANDSWOTModular-Italic.designspace
+familyName: "BRANDSWOT Modular"
+outputDir: "../fonts"
+buildVariable: true
+buildStatic: true
+buildOTF: true
+buildWebfont: true
+autohintTTF: false

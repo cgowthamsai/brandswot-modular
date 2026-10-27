@@ -1,0 +1,21 @@
+{
+  "name": "brandswot-modular",
+  "version": "2.100.0",
+  "description": "BRANDSWOT Modular — a pixel display typeface built from running-bond brickwork. Variable weight 300–900 with italics. By Gowtham Sai, BRANDSWOT Consultancy.",
+  "keywords": ["font", "typeface", "pixel-font", "display", "variable-font", "woff2", "brandswot", "ofl"],
+  "homepage": "https://cgowthamsai.github.io/brandswot-modular/",
+  "repository": { "type": "git", "url": "git+https://github.com/cgowthamsai/brandswot-modular.git" },
+  "bugs": { "url": "https://github.com/cgowthamsai/brandswot-modular/issues" },
+  "author": "Gowtham Sai <gowtham@brandswotconsultancy.com> (https://brandswotconsultancy.com)",
+  "license": "OFL-1.1",
+  "style": "css/brandswot-modular.css",
+  "main": "css/brandswot-modular.css",
+  "files": [
+    "css/",
+    "fonts/webfonts/",
+    "fonts/variable/",
+    "fonts/otf/",
+    "OFL.txt",
+    "README.md"
+  ]
+}

@@ -1,0 +1,4 @@
+gftools>=0.9.80
+fontmake>=3.9
+ufoLib2>=0.16
+glyphsLib>=6.9
